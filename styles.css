@@ -1,0 +1,241 @@
+:root {
+    --night : #111827;
+    --brown-darkest: #FBBF24;
+    --brown-dark: #FDE68A;
+    --brown-lightest: #FFFBEB;
+    --my-gray : #6B7280;
+    --my-light-gray: #D5D4D8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--brown-lightest);
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: var(--night);
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px 0;
+    background-color: var(--brown-lightest);
+    height: 500px;
+    width: 520px;
+    border-radius: 15px;
+}
+
+#container-head{
+    padding: 20px 0;
+}
+
+#container-head p {
+    color: var(--my-gray);
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    line-height: 40px;
+    padding: 0 0 16px 0;
+}
+h1 span {
+    color: var(--brown-darkest);
+}
+
+#container-body {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#body-part-i , #body-part-ii {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #6B7280;
+}
+
+#action-button {
+    color: var(--brown-lightest);
+    background-color: var(--brown-darkest);
+    border: none;
+    padding: 8px 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    
+}
+
+#body-part-i {
+    padding: 15px 10px 10px 20px;
+    row-gap: 13px;
+}
+#body-part-i label {
+    padding: 8px 0px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #6B7280;
+    margin-top: 5px;
+}
+#Char-label{
+    padding: 8px 0px 8px 2px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #6B7280;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#select-el{
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #111827;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 30px;
+  line-height: 18px;
+}
+
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 100;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 16px;
+  width: 60px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--brown-darkest);
+  transition: .4s;
+  border-radius: 26px;
+  
+}
+
+input:checked + .slider {
+  background-color: var(--night);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--night);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#result {
+    display: flex;
+    padding-top: 10px;
+    border-top: 2px solid var(--my-gray);
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.display{
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--night);
+    border-radius: 6px;
+    padding: 0 2px 0 0;
+    color: var(--brown-dark);
+    text-align: center;
+}
+
+.display button{
+    background-color: var(--brown-darkest);
+    width: 15%;
+    height: 85%;
+    border-radius: 4px;
+}
+#result p{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-effect-3:hover{
+    text-shadow: 0 0 5 rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.hover-effect-2:hover{
+    cursor: pointer;
+    background-color: var(--brown-lightest);
+}
+
+
