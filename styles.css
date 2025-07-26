@@ -22,17 +22,7 @@ body{
     
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--brown-lightest);
-    padding: 10px;
-    width: 100%;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
 
-}
 #main {
     display: flex;
     justify-content: center;
